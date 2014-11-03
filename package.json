@@ -1,7 +1,7 @@
 {
   "name": "grunt-remove-duplicates",
   "description": "Removes scripts duplicates from HTML files",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/komlev/grunt-remove-duplicates",
   "author": {
     "name": "komlev",
