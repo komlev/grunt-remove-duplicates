@@ -20,16 +20,21 @@ grunt.loadNpmTasks('grunt-remove-duplicates');
 ## The "remove_duplicates" task
 
 ### Overview
-Plugin remove "script" tags with duplicate "src" attributes
+Plugin remove "script" and "link" tags with duplicate "src" and "href" attributes
 ```html
 <script src="1.js"></script>
 <script src="2.js"></script> 
 <script src="2.js"></script>
+<link href="1.css" rel="stylesheet" type="text/css">
+<link href="1.css" rel="stylesheet" type="text/css">
+<link href="2.css" type="text/css" type="text/css">
 ```
 will become
 ```html
 <script src="1.js"></script>
 <script src="2.js"></script> 
+<link href="1.css" rel="stylesheet" type="text/css">
+<link href="2.css" type="text/css" type="text/css">
 ```
 In your project's Gruntfile, add a section named `remove_duplicates` to the data object passed into `grunt.initConfig()`.
 
